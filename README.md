@@ -122,5 +122,3 @@ Bu komutta:
 ## Hazırlayan
 
 - Gürel Bilgin
-
-Bu proje, Sayısal Tasarım dersi kapsamında geliştirilmiştir.
