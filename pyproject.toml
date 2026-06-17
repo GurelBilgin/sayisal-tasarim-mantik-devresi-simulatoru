@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sayisal-tasarim-simulatoru"
+version = "1.0.0"
+description = "Python ve Tkinter ile geliştirilmiş mantık devresi simülatörü"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Gürel Bilgin" }
+]
+
+[project.scripts]
+sayisal-tasarim-simulatoru = "sayisal_tasarim_simulatoru.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
