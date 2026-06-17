@@ -6,15 +6,15 @@ Projede ayrıca özel bir uygulama ikonu bulunur. Bu ikon hem Tkinter penceresin
 
 ## Özellikler
 
-- AND, OR, NOT, BUFFER, NAND, NOR, XOR ve XNOR kapıları
-- Giriş kutusu oluşturma ve giriş değerini değiştirme
-- Çıkış kutusu ile sonucu görüntüleme
-- Canvas üzerinde eleman yerleştirme
-- Elemanlar arasında bağlantı kurma
-- Kapı çıkışlarını hesaplama
-- Harici kapı görseli gerektirmeyen çizim tabanlı Tkinter arayüzü
-- Tkinter pencere ikonu ve EXE ikonu için hazır `app_icon.ico`
-- Test edilebilir modüler mantık motoru
+* AND, OR, NOT, BUFFER, NAND, NOR, XOR ve XNOR kapıları
+* Giriş kutusu oluşturma ve giriş değerini değiştirme
+* Çıkış kutusu ile sonucu görüntüleme
+* Canvas üzerinde eleman yerleştirme
+* Elemanlar arasında bağlantı kurma
+* Kapı çıkışlarını hesaplama
+* Harici kapı görseli gerektirmeyen çizim tabanlı Tkinter arayüzü
+* Tkinter pencere ikonu ve EXE ikonu için hazır `app_icon.ico`
+* Test edilebilir modüler mantık motoru
 
 ## Proje Yapısı
 
@@ -69,16 +69,16 @@ sayisal-tasarim-simulatoru
 
 ## Mantık Kapıları
 
-| Kapı | Açıklama |
-|---|---|
-| AND | Tüm girişler 1 ise 1 üretir. |
-| OR | En az bir giriş 1 ise 1 üretir. |
-| NOT | Tek girişi tersler. |
-| BUFFER | Giriş değerini aynen aktarır. |
-| NAND | AND sonucunun tersini üretir. |
-| NOR | OR sonucunun tersini üretir. |
-| XOR | Girişlerden tek sayıda 1 varsa 1 üretir. |
-| XNOR | XOR sonucunun tersini üretir. |
+| Kapı   | Açıklama                                 |
+| ------ | ---------------------------------------- |
+| AND    | Tüm girişler 1 ise 1 üretir.             |
+| OR     | En az bir giriş 1 ise 1 üretir.          |
+| NOT    | Tek girişi tersler.                      |
+| BUFFER | Giriş değerini aynen aktarır.            |
+| NAND   | AND sonucunun tersini üretir.            |
+| NOR    | OR sonucunun tersini üretir.             |
+| XOR    | Girişlerden tek sayıda 1 varsa 1 üretir. |
+| XNOR   | XOR sonucunun tersini üretir.            |
 
 ## Testler
 
@@ -110,10 +110,10 @@ dist/sayisal-tasarim-simulatoru.exe
 
 Bu komutta:
 
-- `--onefile` tek bir `.exe` dosyası üretir.
-- `--windowed` çalışırken ek komut satırı penceresi açılmasını engeller.
-- `--icon` EXE dosyasının simgesini ayarlar.
-- `--add-data` ikon dosyalarının EXE içine eklenmesini sağlar.
+* `--onefile` tek bir `.exe` dosyası üretir.
+* `--windowed` çalışırken ek komut satırı penceresi açılmasını engeller.
+* `--icon` EXE dosyasının simgesini ayarlar.
+* `--add-data` ikon dosyalarının EXE içine eklenmesini sağlar.
 
 ## Geliştirme Notları
 
@@ -121,4 +121,4 @@ Bu komutta:
 
 ## Hazırlayan
 
-- Gürel Bilgin
+* Gürel Bilgin
