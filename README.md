@@ -93,6 +93,7 @@ Uygulamayı kaynak kodu çalıştırmadan kullanmak isteyenler, projenin sağ ta
 
 ```text
 sayisal-tasarim-simulatoru.exe
+```
 
 ## Windows EXE Oluşturma
 
