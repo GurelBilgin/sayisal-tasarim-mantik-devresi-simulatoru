@@ -16,3 +16,6 @@ htmlcov/
 Thumbs.db
 .idea/
 .vscode/
+
+# PyInstaller
+*.spec

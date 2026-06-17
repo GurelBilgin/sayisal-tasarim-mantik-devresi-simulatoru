@@ -2,11 +2,20 @@
 
 from __future__ import annotations
 
+import sys
 import tkinter as tk
 from dataclasses import dataclass
+from pathlib import Path
 from tkinter import messagebox, simpledialog
 
 from .logic import Circuit, GateType
+
+
+def asset_path(file_name: str) -> Path:
+    """Normal çalıştırmada ve PyInstaller EXE içinde asset dosya yolunu döndürür."""
+    if hasattr(sys, "_MEIPASS"):
+        return Path(sys._MEIPASS) / "assets" / file_name
+    return Path(__file__).resolve().parent / "assets" / file_name
 
 
 @dataclass
@@ -38,6 +47,7 @@ class LogicGateSimulator:
         self.root = root
         self.root.title("Sayısal Tasarım Mantık Devresi Simülatörü")
         self.root.geometry("1050x680")
+        self._set_window_icon()
 
         self.circuit = Circuit()
         self.components: dict[str, VisualComponent] = {}
@@ -48,6 +58,25 @@ class LogicGateSimulator:
         self.counter = 1
 
         self._build_ui()
+
+    def _set_window_icon(self) -> None:
+        """Tkinter penceresi için uygulama ikonunu ayarlar."""
+        ico_path = asset_path("app_icon.ico")
+        png_path = asset_path("app_icon.png")
+
+        try:
+            if ico_path.exists():
+                self.root.iconbitmap(str(ico_path))
+        except tk.TclError:
+            # Bazı platformlarda iconbitmap desteklenmeyebilir.
+            pass
+
+        try:
+            if png_path.exists():
+                self._window_icon = tk.PhotoImage(file=str(png_path))
+                self.root.iconphoto(True, self._window_icon)
+        except tk.TclError:
+            pass
 
     def _build_ui(self) -> None:
         toolbar = tk.Frame(self.root, relief=tk.RAISED, bd=1)
