@@ -2,8 +2,6 @@
 
 Bu proje, Sayısal Tasarım dersi kapsamında hazırlanmış basit bir **mantık devresi simülatörüdür**. Uygulama Python ve Tkinter kullanılarak geliştirilmiştir. Kullanıcı arayüzü üzerinden giriş elemanları, çıkış elemanları ve temel mantık kapıları oluşturulabilir; bağlantılar kurularak devre çıktıları simüle edilebilir.
 
-Projede ayrıca özel bir uygulama ikonu bulunur. Bu ikon hem Tkinter penceresinde kullanılır hem de PyInstaller ile `.exe` oluşturulurken çalıştırılabilir dosyanın simgesi olarak ayarlanabilir.
-
 ## Özellikler
 
 * AND, OR, NOT, BUFFER, NAND, NOR, XOR ve XNOR kapıları
@@ -85,6 +83,16 @@ sayisal-tasarim-simulatoru
 ```bash
 python -m unittest discover -s tests -v
 ```
+## Windows EXE İndirme
+
+Windows kullanıcıları için hazır `.exe` dosyası GitHub Releases bölümünde paylaşılmıştır.
+
+Uygulamayı kaynak kodu çalıştırmadan kullanmak isteyenler, projenin sağ tarafındaki **Releases** bölümünden son sürümü indirebilir.
+
+İndirilecek dosya:
+
+```text
+sayisal-tasarim-simulatoru.exe
 
 ## Windows EXE Oluşturma
 
